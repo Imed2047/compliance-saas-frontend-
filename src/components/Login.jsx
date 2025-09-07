@@ -17,7 +17,7 @@ const Login = ({ onLogin }) => {
     setError('')
     
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch('https://imedch.pythonanywhere.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
